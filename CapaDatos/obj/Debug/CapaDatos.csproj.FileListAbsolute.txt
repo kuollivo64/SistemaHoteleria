@@ -1,0 +1,5 @@
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\CapaDatos\obj\Debug\CapaDatos.pdb

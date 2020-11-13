@@ -1,0 +1,78 @@
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\bin\Debug\SistemaHoteleria.exe.config
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\bin\Debug\SistemaHoteleria.exe
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\bin\Debug\SistemaHoteleria.pdb
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.InicioSesion.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.OlvidasteConstrasenia.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersonalMantenimiento.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.Properties.Resources.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.exe
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.pdb
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersonalLimpieza.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersLimpieza.NuevoRegistroL.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersLimpieza.ModificarRegistroL.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersLimpieza.VerHabitaciones.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersMantenimiento.NuevoRegistroM.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersMantenimiento.ModificarRegistroM.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersMantenimiento.VerRegistros.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.NuevoEmpleado.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.Anual.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.Mensual.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.AdministrarTipos.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.VerHabitaciones.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.ModificarHabitacion.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.NuevaHabitacion.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.Semanal.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.VerEmpleados.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.DespedirEmpleado.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.ModificarEmpleado.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\bin\Debug\EntityFramework.dll
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\bin\Debug\EntityFramework.xml
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.FRecepcionista.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.FGerente.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.RecepcionistaHotel.NuevaReserva.resources
+C:\Users\Galva\Documents\GitHub\Universidad\4 Semestre\Proyecto y Sistemas\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.RecepcionistaHotel.VerReservas.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\bin\Debug\SistemaHoteleria.exe.config
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\bin\Debug\SistemaHoteleria.exe
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\bin\Debug\SistemaHoteleria.pdb
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\bin\Debug\EntityFramework.dll
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\bin\Debug\EntityFramework.SqlServer.dll
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\bin\Debug\EntityFramework.xml
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\bin\Debug\EntityFramework.SqlServer.xml
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.Anual.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.Mensual.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.AdministrarTipos.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.VerHabitaciones.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.ModificarHabitacion.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.NuevaHabitacion.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.Semanal.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.VerEmpleados.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.DespedirEmpleado.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.ModificarEmpleado.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.GerenteGeneral.NuevoEmpleado.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersLimpieza.VerHabitaciones.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersLimpieza.ModificarRegistroL.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersLimpieza.NuevoRegistroL.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersMantenimiento.ModificarRegistroM.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersMantenimiento.NuevoRegistroM.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersMantenimiento.VerRegistros.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.FRecepcionista.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.InicioSesion.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.OlvidasteConstrasenia.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.FGerente.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersonalLimpieza.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.PersonalMantenimiento.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.Properties.Resources.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.RecepcionistaHotel.NuevaReserva.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.RecepcionistaHotel.VerReservas.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\CapaPresentacion.csproj.CopyComplete
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.exe
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.pdb

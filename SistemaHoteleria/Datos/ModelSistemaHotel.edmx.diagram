@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5f4be6f9fc5a49c1aacf81d36d49a0da" Name="Diagram1">
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.DetalleHabitacion" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.DetalleRegistroLimpiezas" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.DetalleRegistroMantenimiento" Width="1.5" PointX="8" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.DetalleReservas" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.Factura" Width="1.5" PointX="3" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.Gerente" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.Habitaciones" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.Huespedes" Width="1.5" PointX="0.75" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.Limpieza" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.Mantenimiento" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.Recepcionista" Width="1.5" PointX="0.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.RegistroHuespedes" Width="1.5" PointX="3" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.RegistroLimpieza" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.RegistroMantenimiento" Width="1.5" PointX="5.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.Reservas" Width="1.5" PointX="0.75" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.Servicios" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaHotelWaraModel.Tipo" Width="1.5" PointX="0.75" PointY="13.625" IsExpanded="true" />
+        <AssociationConnector Association="SistemaHotelWaraModel.FK_DetalleHabitacion_Habitaciones" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaHotelWaraModel.FK_DetalleHabitacion_Tipo" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaHotelWaraModel.FK_DetalleRegistroLimpiezas_Habitaciones" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaHotelWaraModel.FK_DetalleRegistroLimpiezas_PersLimpieza" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaHotelWaraModel.FK_DetalleRegistroLimpiezas_RegistroLimpieza" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaHotelWaraModel.FK_DetalleRegistroMantenimiento_PersMantenimiento" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaHotelWaraModel.FK_DetalleRegistroMantenimiento_RegistroMantenimiento" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaHotelWaraModel.FK_DetalleReservas_Habitaciones" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaHotelWaraModel.FK_DetalleReservas_Recepcionista" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaHotelWaraModel.FK_DetalleReservas_Reservas" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaHotelWaraModel.FK_Factura_Reservas" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaHotelWaraModel.FK_Servicios_Habitaciones" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaHotelWaraModel.FK_RegistroHuespedes_Huespedes" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaHotelWaraModel.FK_RegistroHuespedes_Reservas" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

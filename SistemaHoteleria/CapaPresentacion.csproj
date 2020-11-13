@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9721D7CC-3326-4E12-81A6-A094378633B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SistemaHoteleria</RootNamespace>
+    <AssemblyName>SistemaHoteleria</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datos\DetalleHabitacion.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\DetalleRegistroLimpiezas.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\DetalleRegistroMantenimiento.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\DetalleReservas.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\exo_DiezDatos2_Result.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\exo_SieteDiasPL1_Result.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\exo_SieteDiasPL2_Result.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\exo_SieteDiasPL_Result.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\exo_UnMesPL1_Result.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\exo_UnMesPL2_Result.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\exo_UnMesPL_Result.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Factura.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Gerente.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Habitaciones.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Huespedes.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Limpieza.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Mantenimiento.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ModelSistemaHotel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSistemaHotel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ModelSistemaHotel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\ModelSistemaHotel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSistemaHotel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Recepcionista.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\RegistroHuespedes.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\RegistroLimpieza.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\RegistroMantenimiento.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Reservas.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Servicios.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\sysdiagrams.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Tipo.cs">
+      <DependentUpon>ModelSistemaHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GerenteGeneral\Anual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenteGeneral\Anual.Designer.cs">
+      <DependentUpon>Anual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenteGeneral\Mensual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenteGeneral\Mensual.Designer.cs">
+      <DependentUpon>Mensual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenteGeneral\AdministrarTipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenteGeneral\AdministrarTipos.Designer.cs">
+      <DependentUpon>AdministrarTipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenteGeneral\VerHabitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenteGeneral\VerHabitaciones.Designer.cs">
+      <DependentUpon>VerHabitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenteGeneral\ModificarHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenteGeneral\ModificarHabitacion.Designer.cs">
+      <DependentUpon>ModificarHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenteGeneral\NuevaHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenteGeneral\NuevaHabitacion.Designer.cs">
+      <DependentUpon>NuevaHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenteGeneral\Semanal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenteGeneral\Semanal.Designer.cs">
+      <DependentUpon>Semanal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenteGeneral\VerEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenteGeneral\VerEmpleados.Designer.cs">
+      <DependentUpon>VerEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenteGeneral\DespedirEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenteGeneral\DespedirEmpleado.Designer.cs">
+      <DependentUpon>DespedirEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenteGeneral\ModificarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenteGeneral\ModificarEmpleado.Designer.cs">
+      <DependentUpon>ModificarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenteGeneral\NuevoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenteGeneral\NuevoEmpleado.Designer.cs">
+      <DependentUpon>NuevoEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersLimpieza\VerHabitaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersLimpieza\VerHabitaciones.Designer.cs">
+      <DependentUpon>VerHabitaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersLimpieza\ModificarRegistroL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersLimpieza\ModificarRegistroL.Designer.cs">
+      <DependentUpon>ModificarRegistroL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersLimpieza\NuevoRegistroL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersLimpieza\NuevoRegistroL.Designer.cs">
+      <DependentUpon>NuevoRegistroL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersMantenimiento\ModificarRegistroM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersMantenimiento\ModificarRegistroM.Designer.cs">
+      <DependentUpon>ModificarRegistroM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersMantenimiento\NuevoRegistroM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersMantenimiento\NuevoRegistroM.Designer.cs">
+      <DependentUpon>NuevoRegistroM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersMantenimiento\VerRegistros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersMantenimiento\VerRegistros.Designer.cs">
+      <DependentUpon>VerRegistros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRecepcionista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRecepcionista.Designer.cs">
+      <DependentUpon>FRecepcionista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSesion.Designer.cs">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OlvidasteConstrasenia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlvidasteConstrasenia.Designer.cs">
+      <DependentUpon>OlvidasteConstrasenia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGerente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGerente.Designer.cs">
+      <DependentUpon>FGerente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalLimpieza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalLimpieza.Designer.cs">
+      <DependentUpon>PersonalLimpieza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalMantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalMantenimiento.Designer.cs">
+      <DependentUpon>PersonalMantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecepcionistaHotel\NuevaReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecepcionistaHotel\NuevaReserva.Designer.cs">
+      <DependentUpon>NuevaReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecepcionistaHotel\VerReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecepcionistaHotel\VerReservas.Designer.cs">
+      <DependentUpon>VerReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SistemaHotelWaraDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SistemaHotelWaraDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GerenteGeneral\Anual.resx">
+      <DependentUpon>Anual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenteGeneral\Mensual.resx">
+      <DependentUpon>Mensual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenteGeneral\AdministrarTipos.resx">
+      <DependentUpon>AdministrarTipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenteGeneral\VerHabitaciones.resx">
+      <DependentUpon>VerHabitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenteGeneral\ModificarHabitacion.resx">
+      <DependentUpon>ModificarHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenteGeneral\NuevaHabitacion.resx">
+      <DependentUpon>NuevaHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenteGeneral\Semanal.resx">
+      <DependentUpon>Semanal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenteGeneral\VerEmpleados.resx">
+      <DependentUpon>VerEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenteGeneral\DespedirEmpleado.resx">
+      <DependentUpon>DespedirEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenteGeneral\ModificarEmpleado.resx">
+      <DependentUpon>ModificarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenteGeneral\NuevoEmpleado.resx">
+      <DependentUpon>NuevoEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersLimpieza\VerHabitaciones.resx">
+      <DependentUpon>VerHabitaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersLimpieza\ModificarRegistroL.resx">
+      <DependentUpon>ModificarRegistroL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersLimpieza\NuevoRegistroL.resx">
+      <DependentUpon>NuevoRegistroL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersMantenimiento\ModificarRegistroM.resx">
+      <DependentUpon>ModificarRegistroM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersMantenimiento\NuevoRegistroM.resx">
+      <DependentUpon>NuevoRegistroM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersMantenimiento\VerRegistros.resx">
+      <DependentUpon>VerRegistros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRecepcionista.resx">
+      <DependentUpon>FRecepcionista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioSesion.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OlvidasteConstrasenia.resx">
+      <DependentUpon>OlvidasteConstrasenia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGerente.resx">
+      <DependentUpon>FGerente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalLimpieza.resx">
+      <DependentUpon>PersonalLimpieza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalMantenimiento.resx">
+      <DependentUpon>PersonalMantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RecepcionistaHotel\NuevaReserva.resx">
+      <DependentUpon>NuevaReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecepcionistaHotel\VerReservas.resx">
+      <DependentUpon>VerReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Datos\ModelSistemaHotel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelSistemaHotel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Datos\ModelSistemaHotel.edmx.diagram">
+      <DependentUpon>ModelSistemaHotel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SistemaHotelWaraDataSet.xsc">
+      <DependentUpon>SistemaHotelWaraDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SistemaHotelWaraDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SistemaHotelWaraDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SistemaHotelWaraDataSet.xss">
+      <DependentUpon>SistemaHotelWaraDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Datos\ModelSistemaHotel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelSistemaHotel.edmx</DependentUpon>
+      <LastGenOutput>ModelSistemaHotel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Datos\ModelSistemaHotel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelSistemaHotel.edmx</DependentUpon>
+      <LastGenOutput>ModelSistemaHotel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

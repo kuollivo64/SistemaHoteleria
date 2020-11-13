@@ -1,0 +1,1216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SistemaHotelWaraModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DetalleHabitacion">
+          <Key>
+            <PropertyRef Name="idDetalleHabitacion" />
+          </Key>
+          <Property Name="idDetalleHabitacion" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="idTipo" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="DetalleRegistroLimpiezas">
+          <Key>
+            <PropertyRef Name="idDetRegLim" />
+          </Key>
+          <Property Name="idDetRegLim" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idEmpleado" Type="varchar" MaxLength="20" />
+          <Property Name="idRegistroLimpieza" Type="varchar" MaxLength="20" />
+          <Property Name="idHabitacion" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="DetalleRegistroMantenimiento">
+          <Key>
+            <PropertyRef Name="idDetRegMan" />
+          </Key>
+          <Property Name="idDetRegMan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idEmpleado" Type="varchar" MaxLength="20" />
+          <Property Name="idRegistroMantenimiento" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="DetalleReservas">
+          <Key>
+            <PropertyRef Name="idDetalleReservas" />
+          </Key>
+          <Property Name="idEmpleado" Type="varchar" MaxLength="20" />
+          <Property Name="idDetalleReservas" Type="int" Nullable="false" />
+          <Property Name="idHabitacion" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Factura">
+          <Key>
+            <PropertyRef Name="idFactura" />
+          </Key>
+          <Property Name="idFactura" Type="int" Nullable="false" />
+          <Property Name="fecha" Type="date" />
+          <Property Name="total" Type="decimal" Precision="6" Scale="2" />
+        </EntityType>
+        <EntityType Name="Gerente">
+          <Key>
+            <PropertyRef Name="idEmpleado" />
+          </Key>
+          <Property Name="idEmpleado" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="contrasenia" Type="varchar" MaxLength="30" />
+          <Property Name="nombre" Type="varchar" MaxLength="20" />
+          <Property Name="paterno" Type="varchar" MaxLength="20" />
+          <Property Name="materno" Type="varchar" MaxLength="20" />
+          <Property Name="email" Type="varchar" MaxLength="30" />
+          <Property Name="telefono" Type="varchar" MaxLength="20" />
+          <Property Name="fechaNacimiento" Type="date" />
+          <Property Name="preguntaRecu" Type="varchar" MaxLength="30" />
+          <Property Name="respuestaRecu" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Habitaciones">
+          <Key>
+            <PropertyRef Name="idHabitacion" />
+          </Key>
+          <Property Name="idHabitacion" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="caracteristicas" Type="varchar" MaxLength="200" />
+          <Property Name="precio" Type="decimal" Precision="6" Scale="2" />
+          <Property Name="nroPiso" Type="int" />
+          <Property Name="nroCamas" Type="int" />
+          <Property Name="estado" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Huespedes">
+          <Key>
+            <PropertyRef Name="idHuesped" />
+          </Key>
+          <Property Name="idHuesped" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="nombre" Type="varchar" MaxLength="20" />
+          <Property Name="paterno" Type="varchar" MaxLength="20" />
+          <Property Name="materno" Type="varchar" MaxLength="20" />
+          <Property Name="documento" Type="varchar" MaxLength="20" />
+          <Property Name="pais" Type="varchar" MaxLength="20" />
+          <Property Name="fechaNacimiento" Type="date" />
+        </EntityType>
+        <EntityType Name="Limpieza">
+          <Key>
+            <PropertyRef Name="idEmpleado" />
+          </Key>
+          <Property Name="idEmpleado" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="contrasenia" Type="varchar" MaxLength="30" />
+          <Property Name="nombre" Type="varchar" MaxLength="20" />
+          <Property Name="paterno" Type="varchar" MaxLength="20" />
+          <Property Name="materno" Type="varchar" MaxLength="20" />
+          <Property Name="email" Type="varchar" MaxLength="30" />
+          <Property Name="telefono" Type="varchar" MaxLength="20" />
+          <Property Name="fechaNacimiento" Type="date" />
+          <Property Name="preguntaRecu" Type="varchar" MaxLength="30" />
+          <Property Name="respuestaRecu" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Mantenimiento">
+          <Key>
+            <PropertyRef Name="idEmpleado" />
+          </Key>
+          <Property Name="idEmpleado" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="contrasenia" Type="varchar" MaxLength="30" />
+          <Property Name="nombre" Type="varchar" MaxLength="20" />
+          <Property Name="paterno" Type="varchar" MaxLength="20" />
+          <Property Name="materno" Type="varchar" MaxLength="20" />
+          <Property Name="email" Type="varchar" MaxLength="30" />
+          <Property Name="telefono" Type="varchar" MaxLength="20" />
+          <Property Name="fechaNacimiento" Type="date" />
+          <Property Name="preguntaRecu" Type="varchar" MaxLength="30" />
+          <Property Name="respuestaRecu" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Recepcionista">
+          <Key>
+            <PropertyRef Name="idEmpleado" />
+          </Key>
+          <Property Name="idEmpleado" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="contrasenia" Type="varchar" MaxLength="30" />
+          <Property Name="nombre" Type="varchar" MaxLength="20" />
+          <Property Name="paterno" Type="varchar" MaxLength="20" />
+          <Property Name="materno" Type="varchar" MaxLength="20" />
+          <Property Name="email" Type="varchar" MaxLength="30" />
+          <Property Name="telefono" Type="varchar" MaxLength="20" />
+          <Property Name="fechaNacimiento" Type="date" />
+          <Property Name="preguntaRecu" Type="varchar" MaxLength="30" />
+          <Property Name="respuestaRecu" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="RegistroHuespedes">
+          <Key>
+            <PropertyRef Name="idRegistroHuesped" />
+          </Key>
+          <Property Name="idRegistroHuesped" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idReserva" Type="int" />
+          <Property Name="idHuespedes" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="RegistroLimpieza">
+          <Key>
+            <PropertyRef Name="idRegistroLimpieza" />
+          </Key>
+          <Property Name="idRegistroLimpieza" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="fecha" Type="date" />
+          <Property Name="hora" Type="varchar" MaxLength="10" />
+          <Property Name="informe" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="RegistroMantenimiento">
+          <Key>
+            <PropertyRef Name="idRegistroMantenimiento" />
+          </Key>
+          <Property Name="idRegistroMantenimiento" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="fecha" Type="date" />
+          <Property Name="hora" Type="varchar" MaxLength="10" />
+          <Property Name="informe" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="Reservas">
+          <Key>
+            <PropertyRef Name="idReserva" />
+          </Key>
+          <Property Name="idReserva" Type="int" Nullable="false" />
+          <Property Name="ingreso" Type="date" />
+          <Property Name="salida" Type="date" />
+          <Property Name="estado" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Servicios">
+          <Key>
+            <PropertyRef Name="idServicio" />
+          </Key>
+          <Property Name="idServicio" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="wifiLobby" Type="bit" />
+          <Property Name="wifiHabitacion" Type="bit" />
+          <Property Name="alberca" Type="bit" />
+          <Property Name="spa" Type="bit" />
+          <Property Name="estacionamiento" Type="bit" />
+          <Property Name="mascotas" Type="bit" />
+          <Property Name="aireAcondicionado" Type="bit" />
+          <Property Name="restaurante" Type="bit" />
+          <Property Name="barHotel" Type="bit" />
+          <Property Name="gym" Type="bit" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Tipo">
+          <Key>
+            <PropertyRef Name="idTipo" />
+          </Key>
+          <Property Name="idTipo" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="descripcion" Type="varchar" MaxLength="150" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_DetalleHabitacion_Habitaciones">
+          <End Role="Habitaciones" Type="Self.Habitaciones" Multiplicity="1" />
+          <End Role="DetalleHabitacion" Type="Self.DetalleHabitacion" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Habitaciones">
+              <PropertyRef Name="idHabitacion" />
+            </Principal>
+            <Dependent Role="DetalleHabitacion">
+              <PropertyRef Name="idDetalleHabitacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleHabitacion_Tipo">
+          <End Role="Tipo" Type="Self.Tipo" Multiplicity="0..1" />
+          <End Role="DetalleHabitacion" Type="Self.DetalleHabitacion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipo">
+              <PropertyRef Name="idTipo" />
+            </Principal>
+            <Dependent Role="DetalleHabitacion">
+              <PropertyRef Name="idTipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleRegistroLimpiezas_Habitaciones">
+          <End Role="Habitaciones" Type="Self.Habitaciones" Multiplicity="0..1" />
+          <End Role="DetalleRegistroLimpiezas" Type="Self.DetalleRegistroLimpiezas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Habitaciones">
+              <PropertyRef Name="idHabitacion" />
+            </Principal>
+            <Dependent Role="DetalleRegistroLimpiezas">
+              <PropertyRef Name="idHabitacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleRegistroLimpiezas_PersLimpieza">
+          <End Role="Limpieza" Type="Self.Limpieza" Multiplicity="0..1" />
+          <End Role="DetalleRegistroLimpiezas" Type="Self.DetalleRegistroLimpiezas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Limpieza">
+              <PropertyRef Name="idEmpleado" />
+            </Principal>
+            <Dependent Role="DetalleRegistroLimpiezas">
+              <PropertyRef Name="idEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleRegistroLimpiezas_RegistroLimpieza">
+          <End Role="RegistroLimpieza" Type="Self.RegistroLimpieza" Multiplicity="0..1" />
+          <End Role="DetalleRegistroLimpiezas" Type="Self.DetalleRegistroLimpiezas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RegistroLimpieza">
+              <PropertyRef Name="idRegistroLimpieza" />
+            </Principal>
+            <Dependent Role="DetalleRegistroLimpiezas">
+              <PropertyRef Name="idRegistroLimpieza" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleRegistroMantenimiento_PersMantenimiento">
+          <End Role="Mantenimiento" Type="Self.Mantenimiento" Multiplicity="0..1" />
+          <End Role="DetalleRegistroMantenimiento" Type="Self.DetalleRegistroMantenimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mantenimiento">
+              <PropertyRef Name="idEmpleado" />
+            </Principal>
+            <Dependent Role="DetalleRegistroMantenimiento">
+              <PropertyRef Name="idEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleRegistroMantenimiento_RegistroMantenimiento">
+          <End Role="RegistroMantenimiento" Type="Self.RegistroMantenimiento" Multiplicity="0..1" />
+          <End Role="DetalleRegistroMantenimiento" Type="Self.DetalleRegistroMantenimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RegistroMantenimiento">
+              <PropertyRef Name="idRegistroMantenimiento" />
+            </Principal>
+            <Dependent Role="DetalleRegistroMantenimiento">
+              <PropertyRef Name="idRegistroMantenimiento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleReservas_Habitaciones">
+          <End Role="Habitaciones" Type="Self.Habitaciones" Multiplicity="0..1" />
+          <End Role="DetalleReservas" Type="Self.DetalleReservas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Habitaciones">
+              <PropertyRef Name="idHabitacion" />
+            </Principal>
+            <Dependent Role="DetalleReservas">
+              <PropertyRef Name="idHabitacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleReservas_Recepcionista">
+          <End Role="Recepcionista" Type="Self.Recepcionista" Multiplicity="0..1" />
+          <End Role="DetalleReservas" Type="Self.DetalleReservas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Recepcionista">
+              <PropertyRef Name="idEmpleado" />
+            </Principal>
+            <Dependent Role="DetalleReservas">
+              <PropertyRef Name="idEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleReservas_Reservas">
+          <End Role="Reservas" Type="Self.Reservas" Multiplicity="1" />
+          <End Role="DetalleReservas" Type="Self.DetalleReservas" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Reservas">
+              <PropertyRef Name="idReserva" />
+            </Principal>
+            <Dependent Role="DetalleReservas">
+              <PropertyRef Name="idDetalleReservas" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Factura_Reservas">
+          <End Role="Reservas" Type="Self.Reservas" Multiplicity="1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Reservas">
+              <PropertyRef Name="idReserva" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="idFactura" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegistroHuespedes_Huespedes">
+          <End Role="Huespedes" Type="Self.Huespedes" Multiplicity="0..1" />
+          <End Role="RegistroHuespedes" Type="Self.RegistroHuespedes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Huespedes">
+              <PropertyRef Name="idHuesped" />
+            </Principal>
+            <Dependent Role="RegistroHuespedes">
+              <PropertyRef Name="idHuespedes" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegistroHuespedes_Reservas">
+          <End Role="Reservas" Type="Self.Reservas" Multiplicity="0..1" />
+          <End Role="RegistroHuespedes" Type="Self.RegistroHuespedes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reservas">
+              <PropertyRef Name="idReserva" />
+            </Principal>
+            <Dependent Role="RegistroHuespedes">
+              <PropertyRef Name="idReserva" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Servicios_Habitaciones">
+          <End Role="Habitaciones" Type="Self.Habitaciones" Multiplicity="1" />
+          <End Role="Servicios" Type="Self.Servicios" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Habitaciones">
+              <PropertyRef Name="idHabitacion" />
+            </Principal>
+            <Dependent Role="Servicios">
+              <PropertyRef Name="idServicio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="exo_DiezDatos2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="exo_SieteDiasPL2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="exo_UnMesPL2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="SistemaHotelWaraModelStoreContainer">
+          <EntitySet Name="DetalleHabitacion" EntityType="Self.DetalleHabitacion" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DetalleRegistroLimpiezas" EntityType="Self.DetalleRegistroLimpiezas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DetalleRegistroMantenimiento" EntityType="Self.DetalleRegistroMantenimiento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DetalleReservas" EntityType="Self.DetalleReservas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Factura" EntityType="Self.Factura" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Gerente" EntityType="Self.Gerente" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Habitaciones" EntityType="Self.Habitaciones" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Huespedes" EntityType="Self.Huespedes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Limpieza" EntityType="Self.Limpieza" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Mantenimiento" EntityType="Self.Mantenimiento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Recepcionista" EntityType="Self.Recepcionista" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RegistroHuespedes" EntityType="Self.RegistroHuespedes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RegistroLimpieza" EntityType="Self.RegistroLimpieza" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RegistroMantenimiento" EntityType="Self.RegistroMantenimiento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Reservas" EntityType="Self.Reservas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Servicios" EntityType="Self.Servicios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tipo" EntityType="Self.Tipo" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_DetalleHabitacion_Habitaciones" Association="Self.FK_DetalleHabitacion_Habitaciones">
+            <End Role="Habitaciones" EntitySet="Habitaciones" />
+            <End Role="DetalleHabitacion" EntitySet="DetalleHabitacion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleHabitacion_Tipo" Association="Self.FK_DetalleHabitacion_Tipo">
+            <End Role="Tipo" EntitySet="Tipo" />
+            <End Role="DetalleHabitacion" EntitySet="DetalleHabitacion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleRegistroLimpiezas_Habitaciones" Association="Self.FK_DetalleRegistroLimpiezas_Habitaciones">
+            <End Role="Habitaciones" EntitySet="Habitaciones" />
+            <End Role="DetalleRegistroLimpiezas" EntitySet="DetalleRegistroLimpiezas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleRegistroLimpiezas_PersLimpieza" Association="Self.FK_DetalleRegistroLimpiezas_PersLimpieza">
+            <End Role="Limpieza" EntitySet="Limpieza" />
+            <End Role="DetalleRegistroLimpiezas" EntitySet="DetalleRegistroLimpiezas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleRegistroLimpiezas_RegistroLimpieza" Association="Self.FK_DetalleRegistroLimpiezas_RegistroLimpieza">
+            <End Role="RegistroLimpieza" EntitySet="RegistroLimpieza" />
+            <End Role="DetalleRegistroLimpiezas" EntitySet="DetalleRegistroLimpiezas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleRegistroMantenimiento_PersMantenimiento" Association="Self.FK_DetalleRegistroMantenimiento_PersMantenimiento">
+            <End Role="Mantenimiento" EntitySet="Mantenimiento" />
+            <End Role="DetalleRegistroMantenimiento" EntitySet="DetalleRegistroMantenimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleRegistroMantenimiento_RegistroMantenimiento" Association="Self.FK_DetalleRegistroMantenimiento_RegistroMantenimiento">
+            <End Role="RegistroMantenimiento" EntitySet="RegistroMantenimiento" />
+            <End Role="DetalleRegistroMantenimiento" EntitySet="DetalleRegistroMantenimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleReservas_Habitaciones" Association="Self.FK_DetalleReservas_Habitaciones">
+            <End Role="Habitaciones" EntitySet="Habitaciones" />
+            <End Role="DetalleReservas" EntitySet="DetalleReservas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleReservas_Recepcionista" Association="Self.FK_DetalleReservas_Recepcionista">
+            <End Role="Recepcionista" EntitySet="Recepcionista" />
+            <End Role="DetalleReservas" EntitySet="DetalleReservas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleReservas_Reservas" Association="Self.FK_DetalleReservas_Reservas">
+            <End Role="Reservas" EntitySet="Reservas" />
+            <End Role="DetalleReservas" EntitySet="DetalleReservas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Factura_Reservas" Association="Self.FK_Factura_Reservas">
+            <End Role="Reservas" EntitySet="Reservas" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegistroHuespedes_Huespedes" Association="Self.FK_RegistroHuespedes_Huespedes">
+            <End Role="Huespedes" EntitySet="Huespedes" />
+            <End Role="RegistroHuespedes" EntitySet="RegistroHuespedes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegistroHuespedes_Reservas" Association="Self.FK_RegistroHuespedes_Reservas">
+            <End Role="Reservas" EntitySet="Reservas" />
+            <End Role="RegistroHuespedes" EntitySet="RegistroHuespedes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Servicios_Habitaciones" Association="Self.FK_Servicios_Habitaciones">
+            <End Role="Habitaciones" EntitySet="Habitaciones" />
+            <End Role="Servicios" EntitySet="Servicios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SistemaHotelWaraModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DetalleHabitacion">
+          <Key>
+            <PropertyRef Name="idDetalleHabitacion" />
+          </Key>
+          <Property Name="idDetalleHabitacion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="idTipo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DetalleRegistroLimpiezas">
+          <Key>
+            <PropertyRef Name="idDetRegLim" />
+          </Key>
+          <Property Name="idDetRegLim" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idEmpleado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="idRegistroLimpieza" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="idHabitacion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DetalleRegistroMantenimiento">
+          <Key>
+            <PropertyRef Name="idDetRegMan" />
+          </Key>
+          <Property Name="idDetRegMan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idEmpleado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="idRegistroMantenimiento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DetalleReservas">
+          <Key>
+            <PropertyRef Name="idDetalleReservas" />
+          </Key>
+          <Property Name="idEmpleado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="idDetalleReservas" Type="Int32" Nullable="false" />
+          <Property Name="idHabitacion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Factura">
+          <Key>
+            <PropertyRef Name="idFactura" />
+          </Key>
+          <Property Name="idFactura" Type="Int32" Nullable="false" />
+          <Property Name="fecha" Type="DateTime" Precision="0" />
+          <Property Name="total" Type="Decimal" Precision="6" Scale="2" />
+        </EntityType>
+        <EntityType Name="Gerente">
+          <Key>
+            <PropertyRef Name="idEmpleado" />
+          </Key>
+          <Property Name="idEmpleado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="contrasenia" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="paterno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="materno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fechaNacimiento" Type="DateTime" Precision="0" />
+          <Property Name="preguntaRecu" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="respuestaRecu" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Habitaciones">
+          <Key>
+            <PropertyRef Name="idHabitacion" />
+          </Key>
+          <Property Name="idHabitacion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="caracteristicas" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="precio" Type="Decimal" Precision="6" Scale="2" />
+          <Property Name="nroPiso" Type="Int32" />
+          <Property Name="nroCamas" Type="Int32" />
+          <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Huespedes">
+          <Key>
+            <PropertyRef Name="idHuesped" />
+          </Key>
+          <Property Name="idHuesped" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="paterno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="materno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="documento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="pais" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fechaNacimiento" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="Limpieza">
+          <Key>
+            <PropertyRef Name="idEmpleado" />
+          </Key>
+          <Property Name="idEmpleado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="contrasenia" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="paterno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="materno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fechaNacimiento" Type="DateTime" Precision="0" />
+          <Property Name="preguntaRecu" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="respuestaRecu" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Mantenimiento">
+          <Key>
+            <PropertyRef Name="idEmpleado" />
+          </Key>
+          <Property Name="idEmpleado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="contrasenia" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="paterno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="materno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fechaNacimiento" Type="DateTime" Precision="0" />
+          <Property Name="preguntaRecu" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="respuestaRecu" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Recepcionista">
+          <Key>
+            <PropertyRef Name="idEmpleado" />
+          </Key>
+          <Property Name="idEmpleado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="contrasenia" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="paterno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="materno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="fechaNacimiento" Type="DateTime" Precision="0" />
+          <Property Name="preguntaRecu" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="respuestaRecu" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="RegistroHuespedes">
+          <Key>
+            <PropertyRef Name="idRegistroHuesped" />
+          </Key>
+          <Property Name="idRegistroHuesped" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idReserva" Type="Int32" />
+          <Property Name="idHuespedes" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="RegistroLimpieza">
+          <Key>
+            <PropertyRef Name="idRegistroLimpieza" />
+          </Key>
+          <Property Name="idRegistroLimpieza" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fecha" Type="DateTime" Precision="0" />
+          <Property Name="hora" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="informe" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="RegistroMantenimiento">
+          <Key>
+            <PropertyRef Name="idRegistroMantenimiento" />
+          </Key>
+          <Property Name="idRegistroMantenimiento" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="fecha" Type="DateTime" Precision="0" />
+          <Property Name="hora" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="informe" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Reservas">
+          <Key>
+            <PropertyRef Name="idReserva" />
+          </Key>
+          <Property Name="idReserva" Type="Int32" Nullable="false" />
+          <Property Name="ingreso" Type="DateTime" Precision="0" />
+          <Property Name="salida" Type="DateTime" Precision="0" />
+          <Property Name="estado" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Servicios">
+          <Key>
+            <PropertyRef Name="idServicio" />
+          </Key>
+          <Property Name="idServicio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="wifiLobby" Type="Boolean" />
+          <Property Name="wifiHabitacion" Type="Boolean" />
+          <Property Name="alberca" Type="Boolean" />
+          <Property Name="spa" Type="Boolean" />
+          <Property Name="estacionamiento" Type="Boolean" />
+          <Property Name="mascotas" Type="Boolean" />
+          <Property Name="aireAcondicionado" Type="Boolean" />
+          <Property Name="restaurante" Type="Boolean" />
+          <Property Name="barHotel" Type="Boolean" />
+          <Property Name="gym" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Tipo">
+          <Key>
+            <PropertyRef Name="idTipo" />
+          </Key>
+          <Property Name="idTipo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_DetalleHabitacion_Habitaciones">
+          <End Role="Habitaciones" Type="Self.Habitaciones" Multiplicity="1" />
+          <End Role="DetalleHabitacion" Type="Self.DetalleHabitacion" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Habitaciones">
+              <PropertyRef Name="idHabitacion" />
+            </Principal>
+            <Dependent Role="DetalleHabitacion">
+              <PropertyRef Name="idDetalleHabitacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleHabitacion_Tipo">
+          <End Role="Tipo" Type="Self.Tipo" Multiplicity="0..1" />
+          <End Role="DetalleHabitacion" Type="Self.DetalleHabitacion" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipo">
+              <PropertyRef Name="idTipo" />
+            </Principal>
+            <Dependent Role="DetalleHabitacion">
+              <PropertyRef Name="idTipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleRegistroLimpiezas_Habitaciones">
+          <End Role="Habitaciones" Type="Self.Habitaciones" Multiplicity="0..1" />
+          <End Role="DetalleRegistroLimpiezas" Type="Self.DetalleRegistroLimpiezas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Habitaciones">
+              <PropertyRef Name="idHabitacion" />
+            </Principal>
+            <Dependent Role="DetalleRegistroLimpiezas">
+              <PropertyRef Name="idHabitacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleRegistroLimpiezas_PersLimpieza">
+          <End Role="Limpieza" Type="Self.Limpieza" Multiplicity="0..1" />
+          <End Role="DetalleRegistroLimpiezas" Type="Self.DetalleRegistroLimpiezas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Limpieza">
+              <PropertyRef Name="idEmpleado" />
+            </Principal>
+            <Dependent Role="DetalleRegistroLimpiezas">
+              <PropertyRef Name="idEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleRegistroLimpiezas_RegistroLimpieza">
+          <End Role="RegistroLimpieza" Type="Self.RegistroLimpieza" Multiplicity="0..1" />
+          <End Role="DetalleRegistroLimpiezas" Type="Self.DetalleRegistroLimpiezas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RegistroLimpieza">
+              <PropertyRef Name="idRegistroLimpieza" />
+            </Principal>
+            <Dependent Role="DetalleRegistroLimpiezas">
+              <PropertyRef Name="idRegistroLimpieza" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleRegistroMantenimiento_PersMantenimiento">
+          <End Role="Mantenimiento" Type="Self.Mantenimiento" Multiplicity="0..1" />
+          <End Role="DetalleRegistroMantenimiento" Type="Self.DetalleRegistroMantenimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Mantenimiento">
+              <PropertyRef Name="idEmpleado" />
+            </Principal>
+            <Dependent Role="DetalleRegistroMantenimiento">
+              <PropertyRef Name="idEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleRegistroMantenimiento_RegistroMantenimiento">
+          <End Role="RegistroMantenimiento" Type="Self.RegistroMantenimiento" Multiplicity="0..1" />
+          <End Role="DetalleRegistroMantenimiento" Type="Self.DetalleRegistroMantenimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RegistroMantenimiento">
+              <PropertyRef Name="idRegistroMantenimiento" />
+            </Principal>
+            <Dependent Role="DetalleRegistroMantenimiento">
+              <PropertyRef Name="idRegistroMantenimiento" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleReservas_Habitaciones">
+          <End Role="Habitaciones" Type="Self.Habitaciones" Multiplicity="0..1" />
+          <End Role="DetalleReservas" Type="Self.DetalleReservas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Habitaciones">
+              <PropertyRef Name="idHabitacion" />
+            </Principal>
+            <Dependent Role="DetalleReservas">
+              <PropertyRef Name="idHabitacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleReservas_Recepcionista">
+          <End Role="Recepcionista" Type="Self.Recepcionista" Multiplicity="0..1" />
+          <End Role="DetalleReservas" Type="Self.DetalleReservas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Recepcionista">
+              <PropertyRef Name="idEmpleado" />
+            </Principal>
+            <Dependent Role="DetalleReservas">
+              <PropertyRef Name="idEmpleado" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetalleReservas_Reservas">
+          <End Role="Reservas" Type="Self.Reservas" Multiplicity="1" />
+          <End Role="DetalleReservas" Type="Self.DetalleReservas" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Reservas">
+              <PropertyRef Name="idReserva" />
+            </Principal>
+            <Dependent Role="DetalleReservas">
+              <PropertyRef Name="idDetalleReservas" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Factura_Reservas">
+          <End Role="Reservas" Type="Self.Reservas" Multiplicity="1" />
+          <End Role="Factura" Type="Self.Factura" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Reservas">
+              <PropertyRef Name="idReserva" />
+            </Principal>
+            <Dependent Role="Factura">
+              <PropertyRef Name="idFactura" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Servicios_Habitaciones">
+          <End Role="Habitaciones" Type="Self.Habitaciones" Multiplicity="1" />
+          <End Role="Servicios" Type="Self.Servicios" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Habitaciones">
+              <PropertyRef Name="idHabitacion" />
+            </Principal>
+            <Dependent Role="Servicios">
+              <PropertyRef Name="idServicio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegistroHuespedes_Huespedes">
+          <End Role="Huespedes" Type="Self.Huespedes" Multiplicity="0..1" />
+          <End Role="RegistroHuespedes" Type="Self.RegistroHuespedes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Huespedes">
+              <PropertyRef Name="idHuesped" />
+            </Principal>
+            <Dependent Role="RegistroHuespedes">
+              <PropertyRef Name="idHuespedes" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RegistroHuespedes_Reservas">
+          <End Role="Reservas" Type="Self.Reservas" Multiplicity="0..1" />
+          <End Role="RegistroHuespedes" Type="Self.RegistroHuespedes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Reservas">
+              <PropertyRef Name="idReserva" />
+            </Principal>
+            <Dependent Role="RegistroHuespedes">
+              <PropertyRef Name="idReserva" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SistemaHotelWaraEntitiesV1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DetalleHabitacion" EntityType="Self.DetalleHabitacion" />
+          <EntitySet Name="DetalleRegistroLimpiezas" EntityType="Self.DetalleRegistroLimpiezas" />
+          <EntitySet Name="DetalleRegistroMantenimiento" EntityType="Self.DetalleRegistroMantenimiento" />
+          <EntitySet Name="DetalleReservas" EntityType="Self.DetalleReservas" />
+          <EntitySet Name="Factura" EntityType="Self.Factura" />
+          <EntitySet Name="Gerente" EntityType="Self.Gerente" />
+          <EntitySet Name="Habitaciones" EntityType="Self.Habitaciones" />
+          <EntitySet Name="Huespedes" EntityType="Self.Huespedes" />
+          <EntitySet Name="Limpieza" EntityType="Self.Limpieza" />
+          <EntitySet Name="Mantenimiento" EntityType="Self.Mantenimiento" />
+          <EntitySet Name="Recepcionista" EntityType="Self.Recepcionista" />
+          <EntitySet Name="RegistroHuespedes" EntityType="Self.RegistroHuespedes" />
+          <EntitySet Name="RegistroLimpieza" EntityType="Self.RegistroLimpieza" />
+          <EntitySet Name="RegistroMantenimiento" EntityType="Self.RegistroMantenimiento" />
+          <EntitySet Name="Reservas" EntityType="Self.Reservas" />
+          <EntitySet Name="Servicios" EntityType="Self.Servicios" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="Tipo" EntityType="Self.Tipo" />
+          <AssociationSet Name="FK_DetalleHabitacion_Habitaciones" Association="Self.FK_DetalleHabitacion_Habitaciones">
+            <End Role="Habitaciones" EntitySet="Habitaciones" />
+            <End Role="DetalleHabitacion" EntitySet="DetalleHabitacion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleHabitacion_Tipo" Association="Self.FK_DetalleHabitacion_Tipo">
+            <End Role="Tipo" EntitySet="Tipo" />
+            <End Role="DetalleHabitacion" EntitySet="DetalleHabitacion" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleRegistroLimpiezas_Habitaciones" Association="Self.FK_DetalleRegistroLimpiezas_Habitaciones">
+            <End Role="Habitaciones" EntitySet="Habitaciones" />
+            <End Role="DetalleRegistroLimpiezas" EntitySet="DetalleRegistroLimpiezas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleRegistroLimpiezas_PersLimpieza" Association="Self.FK_DetalleRegistroLimpiezas_PersLimpieza">
+            <End Role="Limpieza" EntitySet="Limpieza" />
+            <End Role="DetalleRegistroLimpiezas" EntitySet="DetalleRegistroLimpiezas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleRegistroLimpiezas_RegistroLimpieza" Association="Self.FK_DetalleRegistroLimpiezas_RegistroLimpieza">
+            <End Role="RegistroLimpieza" EntitySet="RegistroLimpieza" />
+            <End Role="DetalleRegistroLimpiezas" EntitySet="DetalleRegistroLimpiezas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleRegistroMantenimiento_PersMantenimiento" Association="Self.FK_DetalleRegistroMantenimiento_PersMantenimiento">
+            <End Role="Mantenimiento" EntitySet="Mantenimiento" />
+            <End Role="DetalleRegistroMantenimiento" EntitySet="DetalleRegistroMantenimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleRegistroMantenimiento_RegistroMantenimiento" Association="Self.FK_DetalleRegistroMantenimiento_RegistroMantenimiento">
+            <End Role="RegistroMantenimiento" EntitySet="RegistroMantenimiento" />
+            <End Role="DetalleRegistroMantenimiento" EntitySet="DetalleRegistroMantenimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleReservas_Habitaciones" Association="Self.FK_DetalleReservas_Habitaciones">
+            <End Role="Habitaciones" EntitySet="Habitaciones" />
+            <End Role="DetalleReservas" EntitySet="DetalleReservas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleReservas_Recepcionista" Association="Self.FK_DetalleReservas_Recepcionista">
+            <End Role="Recepcionista" EntitySet="Recepcionista" />
+            <End Role="DetalleReservas" EntitySet="DetalleReservas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetalleReservas_Reservas" Association="Self.FK_DetalleReservas_Reservas">
+            <End Role="Reservas" EntitySet="Reservas" />
+            <End Role="DetalleReservas" EntitySet="DetalleReservas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Factura_Reservas" Association="Self.FK_Factura_Reservas">
+            <End Role="Reservas" EntitySet="Reservas" />
+            <End Role="Factura" EntitySet="Factura" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Servicios_Habitaciones" Association="Self.FK_Servicios_Habitaciones">
+            <End Role="Habitaciones" EntitySet="Habitaciones" />
+            <End Role="Servicios" EntitySet="Servicios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegistroHuespedes_Huespedes" Association="Self.FK_RegistroHuespedes_Huespedes">
+            <End Role="Huespedes" EntitySet="Huespedes" />
+            <End Role="RegistroHuespedes" EntitySet="RegistroHuespedes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RegistroHuespedes_Reservas" Association="Self.FK_RegistroHuespedes_Reservas">
+            <End Role="Reservas" EntitySet="Reservas" />
+            <End Role="RegistroHuespedes" EntitySet="RegistroHuespedes" />
+          </AssociationSet>
+          <FunctionImport Name="exo_SieteDiasPL" ReturnType="Collection(SistemaHotelWaraModel.exo_SieteDiasPL_Result)" />
+          <FunctionImport Name="exo_UnMesPL" ReturnType="Collection(SistemaHotelWaraModel.exo_UnMesPL_Result)" />
+          <FunctionImport Name="exo_SieteDiasPL1" ReturnType="Collection(SistemaHotelWaraModel.exo_SieteDiasPL1_Result)" />
+          <FunctionImport Name="exo_UnMesPL1" ReturnType="Collection(SistemaHotelWaraModel.exo_UnMesPL1_Result)" />
+          <FunctionImport Name="exo_SieteDiasPL2" ReturnType="Collection(SistemaHotelWaraModel.exo_SieteDiasPL2_Result)" />
+          <FunctionImport Name="exo_UnMesPL2" ReturnType="Collection(SistemaHotelWaraModel.exo_UnMesPL2_Result)" />
+          <FunctionImport Name="exo_DiezDatos2" ReturnType="Collection(SistemaHotelWaraModel.exo_DiezDatos2_Result)" />
+        </EntityContainer>
+        <ComplexType Name="exo_SieteDiasPL_Result">
+          <Property Type="String" Name="idRegistroLimpieza" Nullable="false" MaxLength="20" />
+          <Property Type="DateTime" Name="fecha" Nullable="true" />
+          <Property Type="String" Name="hora" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="informe" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="exo_UnMesPL_Result">
+          <Property Type="String" Name="idRegistroLimpieza" Nullable="false" MaxLength="20" />
+          <Property Type="DateTime" Name="fecha" Nullable="true" />
+          <Property Type="String" Name="hora" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="informe" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="exo_SieteDiasPL1_Result">
+          <Property Type="String" Name="idRegistroLimpieza" Nullable="false" MaxLength="20" />
+          <Property Type="DateTime" Name="fecha" Nullable="true" />
+          <Property Type="String" Name="hora" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="idHabitacion" Nullable="true" MaxLength="20" />
+          <Property Type="Int32" Name="idDetRegLim" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="exo_UnMesPL1_Result">
+          <Property Type="String" Name="idRegistroLimpieza" Nullable="false" MaxLength="20" />
+          <Property Type="DateTime" Name="fecha" Nullable="true" />
+          <Property Type="String" Name="hora" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="idHabitacion" Nullable="true" MaxLength="20" />
+          <Property Type="Int32" Name="idDetRegLim" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="exo_SieteDiasPL2_Result">
+          <Property Type="String" Name="idRegistroLimpieza" Nullable="false" MaxLength="20" />
+          <Property Type="DateTime" Name="fecha" Nullable="true" />
+          <Property Type="String" Name="hora" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="idHabitacion" Nullable="true" MaxLength="20" />
+          <Property Type="Int32" Name="idDetRegLim" Nullable="false" />
+          <Property Type="String" Name="informe" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="exo_UnMesPL2_Result">
+          <Property Type="String" Name="idRegistroLimpieza" Nullable="false" MaxLength="20" />
+          <Property Type="DateTime" Name="fecha" Nullable="true" />
+          <Property Type="String" Name="hora" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="idHabitacion" Nullable="true" MaxLength="20" />
+          <Property Type="Int32" Name="idDetRegLim" Nullable="false" />
+          <Property Type="String" Name="informe" Nullable="true" MaxLength="200" />
+        </ComplexType>
+        <ComplexType Name="exo_DiezDatos2_Result">
+          <Property Type="String" Name="idRegistroLimpieza" Nullable="false" MaxLength="20" />
+          <Property Type="DateTime" Name="fecha" Nullable="true" />
+          <Property Type="String" Name="hora" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="idHabitacion" Nullable="true" MaxLength="20" />
+          <Property Type="Int32" Name="idDetRegLim" Nullable="false" />
+          <Property Type="String" Name="informe" Nullable="true" MaxLength="200" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SistemaHotelWaraModelStoreContainer" CdmEntityContainer="SistemaHotelWaraEntitiesV1">
+          <EntitySetMapping Name="DetalleHabitacion">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.DetalleHabitacion">
+              <MappingFragment StoreEntitySet="DetalleHabitacion">
+                <ScalarProperty Name="idDetalleHabitacion" ColumnName="idDetalleHabitacion" />
+                <ScalarProperty Name="idTipo" ColumnName="idTipo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetalleRegistroLimpiezas">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.DetalleRegistroLimpiezas">
+              <MappingFragment StoreEntitySet="DetalleRegistroLimpiezas">
+                <ScalarProperty Name="idDetRegLim" ColumnName="idDetRegLim" />
+                <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+                <ScalarProperty Name="idRegistroLimpieza" ColumnName="idRegistroLimpieza" />
+                <ScalarProperty Name="idHabitacion" ColumnName="idHabitacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetalleRegistroMantenimiento">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.DetalleRegistroMantenimiento">
+              <MappingFragment StoreEntitySet="DetalleRegistroMantenimiento">
+                <ScalarProperty Name="idDetRegMan" ColumnName="idDetRegMan" />
+                <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+                <ScalarProperty Name="idRegistroMantenimiento" ColumnName="idRegistroMantenimiento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetalleReservas">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.DetalleReservas">
+              <MappingFragment StoreEntitySet="DetalleReservas">
+                <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+                <ScalarProperty Name="idDetalleReservas" ColumnName="idDetalleReservas" />
+                <ScalarProperty Name="idHabitacion" ColumnName="idHabitacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Factura">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.Factura">
+              <MappingFragment StoreEntitySet="Factura">
+                <ScalarProperty Name="idFactura" ColumnName="idFactura" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="total" ColumnName="total" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Gerente">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.Gerente">
+              <MappingFragment StoreEntitySet="Gerente">
+                <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+                <ScalarProperty Name="contrasenia" ColumnName="contrasenia" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="paterno" ColumnName="paterno" />
+                <ScalarProperty Name="materno" ColumnName="materno" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+                <ScalarProperty Name="preguntaRecu" ColumnName="preguntaRecu" />
+                <ScalarProperty Name="respuestaRecu" ColumnName="respuestaRecu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Habitaciones">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.Habitaciones">
+              <MappingFragment StoreEntitySet="Habitaciones">
+                <ScalarProperty Name="idHabitacion" ColumnName="idHabitacion" />
+                <ScalarProperty Name="caracteristicas" ColumnName="caracteristicas" />
+                <ScalarProperty Name="precio" ColumnName="precio" />
+                <ScalarProperty Name="nroPiso" ColumnName="nroPiso" />
+                <ScalarProperty Name="nroCamas" ColumnName="nroCamas" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Huespedes">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.Huespedes">
+              <MappingFragment StoreEntitySet="Huespedes">
+                <ScalarProperty Name="idHuesped" ColumnName="idHuesped" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="paterno" ColumnName="paterno" />
+                <ScalarProperty Name="materno" ColumnName="materno" />
+                <ScalarProperty Name="documento" ColumnName="documento" />
+                <ScalarProperty Name="pais" ColumnName="pais" />
+                <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Limpieza">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.Limpieza">
+              <MappingFragment StoreEntitySet="Limpieza">
+                <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+                <ScalarProperty Name="contrasenia" ColumnName="contrasenia" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="paterno" ColumnName="paterno" />
+                <ScalarProperty Name="materno" ColumnName="materno" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+                <ScalarProperty Name="preguntaRecu" ColumnName="preguntaRecu" />
+                <ScalarProperty Name="respuestaRecu" ColumnName="respuestaRecu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Mantenimiento">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.Mantenimiento">
+              <MappingFragment StoreEntitySet="Mantenimiento">
+                <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+                <ScalarProperty Name="contrasenia" ColumnName="contrasenia" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="paterno" ColumnName="paterno" />
+                <ScalarProperty Name="materno" ColumnName="materno" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+                <ScalarProperty Name="preguntaRecu" ColumnName="preguntaRecu" />
+                <ScalarProperty Name="respuestaRecu" ColumnName="respuestaRecu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Recepcionista">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.Recepcionista">
+              <MappingFragment StoreEntitySet="Recepcionista">
+                <ScalarProperty Name="idEmpleado" ColumnName="idEmpleado" />
+                <ScalarProperty Name="contrasenia" ColumnName="contrasenia" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="paterno" ColumnName="paterno" />
+                <ScalarProperty Name="materno" ColumnName="materno" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+                <ScalarProperty Name="preguntaRecu" ColumnName="preguntaRecu" />
+                <ScalarProperty Name="respuestaRecu" ColumnName="respuestaRecu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RegistroHuespedes">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.RegistroHuespedes">
+              <MappingFragment StoreEntitySet="RegistroHuespedes">
+                <ScalarProperty Name="idRegistroHuesped" ColumnName="idRegistroHuesped" />
+                <ScalarProperty Name="idReserva" ColumnName="idReserva" />
+                <ScalarProperty Name="idHuespedes" ColumnName="idHuespedes" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RegistroLimpieza">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.RegistroLimpieza">
+              <MappingFragment StoreEntitySet="RegistroLimpieza">
+                <ScalarProperty Name="idRegistroLimpieza" ColumnName="idRegistroLimpieza" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="hora" ColumnName="hora" />
+                <ScalarProperty Name="informe" ColumnName="informe" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RegistroMantenimiento">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.RegistroMantenimiento">
+              <MappingFragment StoreEntitySet="RegistroMantenimiento">
+                <ScalarProperty Name="idRegistroMantenimiento" ColumnName="idRegistroMantenimiento" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="hora" ColumnName="hora" />
+                <ScalarProperty Name="informe" ColumnName="informe" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Reservas">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.Reservas">
+              <MappingFragment StoreEntitySet="Reservas">
+                <ScalarProperty Name="idReserva" ColumnName="idReserva" />
+                <ScalarProperty Name="ingreso" ColumnName="ingreso" />
+                <ScalarProperty Name="salida" ColumnName="salida" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Servicios">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.Servicios">
+              <MappingFragment StoreEntitySet="Servicios">
+                <ScalarProperty Name="idServicio" ColumnName="idServicio" />
+                <ScalarProperty Name="wifiLobby" ColumnName="wifiLobby" />
+                <ScalarProperty Name="wifiHabitacion" ColumnName="wifiHabitacion" />
+                <ScalarProperty Name="alberca" ColumnName="alberca" />
+                <ScalarProperty Name="spa" ColumnName="spa" />
+                <ScalarProperty Name="estacionamiento" ColumnName="estacionamiento" />
+                <ScalarProperty Name="mascotas" ColumnName="mascotas" />
+                <ScalarProperty Name="aireAcondicionado" ColumnName="aireAcondicionado" />
+                <ScalarProperty Name="restaurante" ColumnName="restaurante" />
+                <ScalarProperty Name="barHotel" ColumnName="barHotel" />
+                <ScalarProperty Name="gym" ColumnName="gym" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tipo">
+            <EntityTypeMapping TypeName="SistemaHotelWaraModel.Tipo">
+              <MappingFragment StoreEntitySet="Tipo">
+                <ScalarProperty Name="idTipo" ColumnName="idTipo" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="exo_SieteDiasPL2" FunctionName="SistemaHotelWaraModel.Store.exo_SieteDiasPL2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SistemaHotelWaraModel.exo_SieteDiasPL2_Result">
+                <ScalarProperty Name="idRegistroLimpieza" ColumnName="idRegistroLimpieza" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="hora" ColumnName="hora" />
+                <ScalarProperty Name="idHabitacion" ColumnName="idHabitacion" />
+                <ScalarProperty Name="idDetRegLim" ColumnName="idDetRegLim" />
+                <ScalarProperty Name="informe" ColumnName="informe" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="exo_UnMesPL2" FunctionName="SistemaHotelWaraModel.Store.exo_UnMesPL2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SistemaHotelWaraModel.exo_UnMesPL2_Result">
+                <ScalarProperty Name="idRegistroLimpieza" ColumnName="idRegistroLimpieza" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="hora" ColumnName="hora" />
+                <ScalarProperty Name="idHabitacion" ColumnName="idHabitacion" />
+                <ScalarProperty Name="idDetRegLim" ColumnName="idDetRegLim" />
+                <ScalarProperty Name="informe" ColumnName="informe" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="exo_DiezDatos2" FunctionName="SistemaHotelWaraModel.Store.exo_DiezDatos2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SistemaHotelWaraModel.exo_DiezDatos2_Result">
+                <ScalarProperty Name="idRegistroLimpieza" ColumnName="idRegistroLimpieza" />
+                <ScalarProperty Name="fecha" ColumnName="fecha" />
+                <ScalarProperty Name="hora" ColumnName="hora" />
+                <ScalarProperty Name="idHabitacion" ColumnName="idHabitacion" />
+                <ScalarProperty Name="idDetRegLim" ColumnName="idDetRegLim" />
+                <ScalarProperty Name="informe" ColumnName="informe" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
