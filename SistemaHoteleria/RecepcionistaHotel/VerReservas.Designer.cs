@@ -119,7 +119,7 @@
             this.gbFiltroServicios.Controls.Add(this.bunifuCustomLabel14);
             this.gbFiltroServicios.Controls.Add(this.swWifiHabitacion);
             this.gbFiltroServicios.Controls.Add(this.swWifiLobby);
-            this.gbFiltroServicios.Location = new System.Drawing.Point(1052, 105);
+            this.gbFiltroServicios.Location = new System.Drawing.Point(1052, 17);
             this.gbFiltroServicios.Name = "gbFiltroServicios";
             this.gbFiltroServicios.Size = new System.Drawing.Size(244, 631);
             this.gbFiltroServicios.TabIndex = 232;
@@ -440,7 +440,7 @@
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(1003, 822);
+            this.bunifuCards1.Size = new System.Drawing.Size(1003, 734);
             this.bunifuCards1.TabIndex = 233;
             // 
             // bunifuCustomLabel20
@@ -449,7 +449,7 @@
             this.bunifuCustomLabel20.AutoSize = true;
             this.bunifuCustomLabel20.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuCustomLabel20.Location = new System.Drawing.Point(69, 581);
+            this.bunifuCustomLabel20.Location = new System.Drawing.Point(69, 493);
             this.bunifuCustomLabel20.Name = "bunifuCustomLabel20";
             this.bunifuCustomLabel20.Size = new System.Drawing.Size(341, 32);
             this.bunifuCustomLabel20.TabIndex = 231;
@@ -461,7 +461,7 @@
             this.bunifuCustomLabel19.AutoSize = true;
             this.bunifuCustomLabel19.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bunifuCustomLabel19.Location = new System.Drawing.Point(600, 581);
+            this.bunifuCustomLabel19.Location = new System.Drawing.Point(600, 493);
             this.bunifuCustomLabel19.Name = "bunifuCustomLabel19";
             this.bunifuCustomLabel19.Size = new System.Drawing.Size(276, 32);
             this.bunifuCustomLabel19.TabIndex = 230;
@@ -471,7 +471,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.calendarEstadoHabitacion);
-            this.panel1.Location = new System.Drawing.Point(491, 627);
+            this.panel1.Location = new System.Drawing.Point(491, 539);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(495, 163);
             this.panel1.TabIndex = 229;
@@ -576,7 +576,7 @@
             this.dgvHuespedes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.dgvHuespedes.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.dgvHuespedes.HeaderForeColor = System.Drawing.Color.Honeydew;
-            this.dgvHuespedes.Location = new System.Drawing.Point(0, 627);
+            this.dgvHuespedes.Location = new System.Drawing.Point(0, 539);
             this.dgvHuespedes.Name = "dgvHuespedes";
             this.dgvHuespedes.ReadOnly = true;
             this.dgvHuespedes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -597,6 +597,7 @@
             this.dgvHuespedes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvHuespedes.Size = new System.Drawing.Size(478, 195);
             this.dgvHuespedes.TabIndex = 169;
+            this.dgvHuespedes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHuespedes_CellContentClick);
             // 
             // bunifuCustomLabel8
             // 
@@ -670,8 +671,9 @@
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
             this.dgvReservas.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvReservas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvReservas.Size = new System.Drawing.Size(1003, 297);
+            this.dgvReservas.Size = new System.Drawing.Size(1003, 209);
             this.dgvReservas.TabIndex = 161;
+            this.dgvReservas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReservas_CellContentClick);
             this.dgvReservas.Click += new System.EventHandler(this.dgvReservas_Click);
             // 
             // txtFiltroId
@@ -782,8 +784,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1308, 876);
+            this.ClientSize = new System.Drawing.Size(1308, 788);
             this.Controls.Add(this.bunifuCards1);
             this.Controls.Add(this.gbFiltroServicios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

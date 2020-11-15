@@ -120,7 +120,7 @@ namespace SistemaHoteleria
             this.BarraSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.BarraSuperior.Location = new System.Drawing.Point(0, 0);
             this.BarraSuperior.Name = "BarraSuperior";
-            this.BarraSuperior.Size = new System.Drawing.Size(1400, 67);
+            this.BarraSuperior.Size = new System.Drawing.Size(1386, 67);
             this.BarraSuperior.TabIndex = 0;
             // 
             // lblHora
@@ -129,11 +129,11 @@ namespace SistemaHoteleria
             this.lblHora.AutoSize = true;
             this.AnimMenuItemsStart.SetDecoration(this.lblHora, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.lblHora, BunifuAnimatorNS.DecorationType.None);
-            this.lblHora.Font = new System.Drawing.Font("SEA GARDENS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblHora.Location = new System.Drawing.Point(869, 26);
+            this.lblHora.Location = new System.Drawing.Point(855, 26);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(112, 15);
+            this.lblHora.Size = new System.Drawing.Size(123, 20);
             this.lblHora.TabIndex = 113;
             this.lblHora.Text = "HORA ACTUAL";
             // 
@@ -143,7 +143,7 @@ namespace SistemaHoteleria
             this.AnimMenuItemsStart.SetDecoration(this.pbHora, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.pbHora, BunifuAnimatorNS.DecorationType.None);
             this.pbHora.Image = ((System.Drawing.Image)(resources.GetObject("pbHora.Image")));
-            this.pbHora.Location = new System.Drawing.Point(814, 12);
+            this.pbHora.Location = new System.Drawing.Point(800, 12);
             this.pbHora.Name = "pbHora";
             this.pbHora.Size = new System.Drawing.Size(40, 40);
             this.pbHora.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -155,11 +155,11 @@ namespace SistemaHoteleria
             this.lblUsuario.AutoSize = true;
             this.AnimMenuItemsStart.SetDecoration(this.lblUsuario, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.lblUsuario, BunifuAnimatorNS.DecorationType.None);
-            this.lblUsuario.Font = new System.Drawing.Font("SEA GARDENS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblUsuario.Location = new System.Drawing.Point(462, 26);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(137, 15);
+            this.lblUsuario.Size = new System.Drawing.Size(151, 20);
             this.lblUsuario.TabIndex = 111;
             this.lblUsuario.Text = "USUARIO ACTUAL";
             // 
@@ -181,7 +181,7 @@ namespace SistemaHoteleria
             this.AnimMenuItemsStart.SetDecoration(this.pbRestaurar, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.pbRestaurar, BunifuAnimatorNS.DecorationType.None);
             this.pbRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("pbRestaurar.Image")));
-            this.pbRestaurar.Location = new System.Drawing.Point(1290, 12);
+            this.pbRestaurar.Location = new System.Drawing.Point(1276, 12);
             this.pbRestaurar.Name = "pbRestaurar";
             this.pbRestaurar.Size = new System.Drawing.Size(40, 40);
             this.pbRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -200,7 +200,7 @@ namespace SistemaHoteleria
             this.buttonCerrar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCerrar.FlatAppearance.BorderSize = 0;
             this.buttonCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCerrar.Location = new System.Drawing.Point(1336, 12);
+            this.buttonCerrar.Location = new System.Drawing.Point(1322, 12);
             this.buttonCerrar.Name = "buttonCerrar";
             this.buttonCerrar.Size = new System.Drawing.Size(40, 40);
             this.buttonCerrar.TabIndex = 109;
@@ -213,7 +213,7 @@ namespace SistemaHoteleria
             this.AnimMenuItemsStart.SetDecoration(this.pbMinimizar, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.pbMinimizar, BunifuAnimatorNS.DecorationType.None);
             this.pbMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("pbMinimizar.Image")));
-            this.pbMinimizar.Location = new System.Drawing.Point(1244, 12);
+            this.pbMinimizar.Location = new System.Drawing.Point(1230, 12);
             this.pbMinimizar.Name = "pbMinimizar";
             this.pbMinimizar.Size = new System.Drawing.Size(40, 40);
             this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -227,7 +227,7 @@ namespace SistemaHoteleria
             this.AnimMenuItemsStart.SetDecoration(this.pbMaximizar, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.pbMaximizar, BunifuAnimatorNS.DecorationType.None);
             this.pbMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("pbMaximizar.Image")));
-            this.pbMaximizar.Location = new System.Drawing.Point(1290, 12);
+            this.pbMaximizar.Location = new System.Drawing.Point(1276, 12);
             this.pbMaximizar.Name = "pbMaximizar";
             this.pbMaximizar.Size = new System.Drawing.Size(40, 40);
             this.pbMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -240,11 +240,11 @@ namespace SistemaHoteleria
             this.lblRol.AutoSize = true;
             this.AnimMenuItemsStart.SetDecoration(this.lblRol, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.lblRol, BunifuAnimatorNS.DecorationType.None);
-            this.lblRol.Font = new System.Drawing.Font("SEA GARDENS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRol.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblRol.Location = new System.Drawing.Point(69, 25);
             this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(122, 15);
+            this.lblRol.Size = new System.Drawing.Size(139, 20);
             this.lblRol.TabIndex = 1;
             this.lblRol.Text = "RECEPCIONISTA";
             // 
@@ -271,7 +271,7 @@ namespace SistemaHoteleria
             this.ContenedorMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.ContenedorMenu.Location = new System.Drawing.Point(0, 67);
             this.ContenedorMenu.Name = "ContenedorMenu";
-            this.ContenedorMenu.Size = new System.Drawing.Size(290, 933);
+            this.ContenedorMenu.Size = new System.Drawing.Size(290, 721);
             this.ContenedorMenu.TabIndex = 1;
             // 
             // MenuItems
@@ -402,11 +402,11 @@ namespace SistemaHoteleria
             this.label5.AutoSize = true;
             this.AnimMenuItemsStart.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.label5.Font = new System.Drawing.Font("SEA GARDENS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(75, 767);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(186, 26);
+            this.label5.Size = new System.Drawing.Size(213, 31);
             this.label5.TabIndex = 130;
             this.label5.Text = "FACTURACION";
             // 
@@ -463,11 +463,11 @@ namespace SistemaHoteleria
             this.label4.AutoSize = true;
             this.AnimMenuItemsStart.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.label4, BunifuAnimatorNS.DecorationType.None);
-            this.label4.Font = new System.Drawing.Font("SEA GARDENS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(78, 645);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(192, 26);
+            this.label4.Size = new System.Drawing.Size(218, 31);
             this.label4.TabIndex = 125;
             this.label4.Text = "HABITACIONES";
             // 
@@ -506,6 +506,7 @@ namespace SistemaHoteleria
             this.btnVerHuespedes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVerHuespedes.Textcolor = System.Drawing.Color.White;
             this.btnVerHuespedes.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerHuespedes.Click += new System.EventHandler(this.btnVerHuespedes_Click);
             // 
             // btnModificarHuesped
             // 
@@ -542,6 +543,7 @@ namespace SistemaHoteleria
             this.btnModificarHuesped.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnModificarHuesped.Textcolor = System.Drawing.Color.White;
             this.btnModificarHuesped.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarHuesped.Click += new System.EventHandler(this.btnModificarHuesped_Click);
             // 
             // pictureBox1
             // 
@@ -560,11 +562,11 @@ namespace SistemaHoteleria
             this.label3.AutoSize = true;
             this.AnimMenuItemsStart.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.label3, BunifuAnimatorNS.DecorationType.None);
-            this.label3.Font = new System.Drawing.Font("SEA GARDENS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(78, 421);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 26);
+            this.label3.Size = new System.Drawing.Size(182, 31);
             this.label3.TabIndex = 120;
             this.label3.Text = "HUESPEDES";
             // 
@@ -603,6 +605,7 @@ namespace SistemaHoteleria
             this.btnNuevoHuesped.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevoHuesped.Textcolor = System.Drawing.Color.White;
             this.btnNuevoHuesped.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoHuesped.Click += new System.EventHandler(this.btnNuevoHuesped_Click);
             // 
             // btnVerReservas
             // 
@@ -732,11 +735,11 @@ namespace SistemaHoteleria
             this.lblActivos.AutoSize = true;
             this.AnimMenuItemsStart.SetDecoration(this.lblActivos, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.lblActivos, BunifuAnimatorNS.DecorationType.None);
-            this.lblActivos.Font = new System.Drawing.Font("SEA GARDENS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblActivos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblActivos.Location = new System.Drawing.Point(78, 147);
             this.lblActivos.Name = "lblActivos";
-            this.lblActivos.Size = new System.Drawing.Size(137, 26);
+            this.lblActivos.Size = new System.Drawing.Size(162, 31);
             this.lblActivos.TabIndex = 114;
             this.lblActivos.Text = "RESERVAS";
             // 
@@ -798,11 +801,11 @@ namespace SistemaHoteleria
             this.lblWara.AutoSize = true;
             this.AnimMenuItemsStart.SetDecoration(this.lblWara, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.lblWara, BunifuAnimatorNS.DecorationType.None);
-            this.lblWara.Font = new System.Drawing.Font("SEA GARDENS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWara.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWara.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblWara.Location = new System.Drawing.Point(101, 50);
             this.lblWara.Name = "lblWara";
-            this.lblWara.Size = new System.Drawing.Size(105, 29);
+            this.lblWara.Size = new System.Drawing.Size(118, 37);
             this.lblWara.TabIndex = 111;
             this.lblWara.Text = "WARA";
             // 
@@ -811,11 +814,11 @@ namespace SistemaHoteleria
             this.lblHotel.AutoSize = true;
             this.AnimMenuItemsStart.SetDecoration(this.lblHotel, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.lblHotel, BunifuAnimatorNS.DecorationType.None);
-            this.lblHotel.Font = new System.Drawing.Font("SEA GARDENS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHotel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHotel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblHotel.Location = new System.Drawing.Point(125, 35);
             this.lblHotel.Name = "lblHotel";
-            this.lblHotel.Size = new System.Drawing.Size(57, 15);
+            this.lblHotel.Size = new System.Drawing.Size(62, 20);
             this.lblHotel.TabIndex = 110;
             this.lblHotel.Text = "HOTEL";
             // 
@@ -842,7 +845,7 @@ namespace SistemaHoteleria
             this.ContenedorFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContenedorFormularios.Location = new System.Drawing.Point(290, 67);
             this.ContenedorFormularios.Name = "ContenedorFormularios";
-            this.ContenedorFormularios.Size = new System.Drawing.Size(1110, 933);
+            this.ContenedorFormularios.Size = new System.Drawing.Size(1096, 721);
             this.ContenedorFormularios.TabIndex = 1;
             // 
             // panelFormularios
@@ -858,7 +861,7 @@ namespace SistemaHoteleria
             this.AnimMenuItemsStart.SetDecoration(this.panelFormularios, BunifuAnimatorNS.DecorationType.None);
             this.panelFormularios.Location = new System.Drawing.Point(11, 6);
             this.panelFormularios.Name = "panelFormularios";
-            this.panelFormularios.Size = new System.Drawing.Size(1087, 915);
+            this.panelFormularios.Size = new System.Drawing.Size(1073, 703);
             this.panelFormularios.TabIndex = 0;
             // 
             // label1
@@ -867,11 +870,11 @@ namespace SistemaHoteleria
             this.label1.AutoSize = true;
             this.AnimMenuItemsStart.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.label1.Font = new System.Drawing.Font("SEA GARDENS", 100F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 100F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(521, 442);
+            this.label1.Location = new System.Drawing.Point(514, 336);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(427, 121);
+            this.label1.Size = new System.Drawing.Size(470, 153);
             this.label1.TabIndex = 119;
             this.label1.Text = "WARA";
             // 
@@ -881,11 +884,11 @@ namespace SistemaHoteleria
             this.label2.AutoSize = true;
             this.AnimMenuItemsStart.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.label2.Font = new System.Drawing.Font("SEA GARDENS", 42F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 42F);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(638, 391);
+            this.label2.Location = new System.Drawing.Point(631, 285);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 51);
+            this.label2.Size = new System.Drawing.Size(214, 64);
             this.label2.TabIndex = 118;
             this.label2.Text = "HOTEL";
             // 
@@ -895,7 +898,7 @@ namespace SistemaHoteleria
             this.AnimMenuItemsStart.SetDecoration(this.pbLogoWaraForm, BunifuAnimatorNS.DecorationType.None);
             this.AnimMenuItemBack.SetDecoration(this.pbLogoWaraForm, BunifuAnimatorNS.DecorationType.None);
             this.pbLogoWaraForm.Image = ((System.Drawing.Image)(resources.GetObject("pbLogoWaraForm.Image")));
-            this.pbLogoWaraForm.Location = new System.Drawing.Point(142, 312);
+            this.pbLogoWaraForm.Location = new System.Drawing.Point(135, 206);
             this.pbLogoWaraForm.Name = "pbLogoWaraForm";
             this.pbLogoWaraForm.Size = new System.Drawing.Size(300, 300);
             this.pbLogoWaraForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -985,7 +988,7 @@ namespace SistemaHoteleria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1400, 1000);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.Controls.Add(this.ContenedorFormularios);
             this.Controls.Add(this.ContenedorMenu);
             this.Controls.Add(this.BarraSuperior);

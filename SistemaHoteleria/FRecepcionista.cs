@@ -135,5 +135,29 @@ namespace SistemaHoteleria
             pbRestaurar.Visible = true;
             abrirFormsHijos(new VerReservas());
         }
+
+        private void btnNuevoHuesped_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+            pbMaximizar.Visible = false;
+            pbRestaurar.Visible = true;
+            abrirFormsHijos(new NuevoHuesped());
+        }
+
+        private void btnModificarHuesped_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+            pbMaximizar.Visible = false;
+            pbRestaurar.Visible = true;
+            abrirFormsHijos(new ModificarHuesped());
+        }
+
+        private void btnVerHuespedes_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+            pbMaximizar.Visible = false;
+            pbRestaurar.Visible = true;
+            abrirFormsHijos(new VerHuespedes());
+        }
     }
 }

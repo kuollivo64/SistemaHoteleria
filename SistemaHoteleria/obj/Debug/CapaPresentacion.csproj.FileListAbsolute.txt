@@ -76,3 +76,6 @@ D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\CapaPresentacion.cspr
 D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\CapaPresentacion.csproj.CopyComplete
 D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.exe
 D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.pdb
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.RecepcionistaHotel.NuevoHuesped.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.RecepcionistaHotel.ModificarHuesped.resources
+D:\UNIVERSIDAD\SistemaHoteleria\SistemaHoteleria\obj\Debug\SistemaHoteleria.RecepcionistaHotel.VerHuespedes.resources

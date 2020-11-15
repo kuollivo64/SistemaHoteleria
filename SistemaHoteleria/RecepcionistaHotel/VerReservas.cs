@@ -34,7 +34,6 @@ namespace SistemaHoteleria.RecepcionistaHotel
             {
                 try
                 {
-
                     if (lblIdReserva.Text != "")
                     {
                         if (txtFiltroId.text == "TODOS")
@@ -183,6 +182,16 @@ namespace SistemaHoteleria.RecepcionistaHotel
                 swWifiHabitacion.Value = (bool)s.wifiHabitacion;
                 swWifiLobby.Value = (bool)s.wifiLobby;
             }
+        }
+
+        private void dgvHuespedes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvReservas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
